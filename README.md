@@ -1,11 +1,13 @@
 # SkilStak Vim Setup and Configuration
 
-Our favorite stuff for our favorite editor Vim, the one-true editor (of course).
+Our favorite stuff for our favorite editor Vim, the one-true editor (of course). Fork and maintaining your own is probably best.
 
 * solarized
 * pandoc 
 
 ***Don't forget to learn without arrow keys and `cntr-[` instead of `Esc` key.***
+
+After cloning just run `./install`.
 
 ## FAQ
 
@@ -20,6 +22,12 @@ The biggest claim to use NeoVim is also the biggest reason *not* to use it. It r
 Because it provides no additional benefit beyond that already provided by Vim -- especially when combined with a terminal multiplexer such as `screen` or `tmux`, which we believe all terminal masters should learn as a matter of course. Moreover, encourage further use of *vim script* promotes a non-divided ecosystem of plugins, which are at the core of Vim productivity and adaptability. To suggest another language is needed for such plugins only fractures the development effort unnecessarily.
 
 ### *How do I add a plugin?*
+
+To add a plugin simply add it to the *Plug* section of your `vimrc` and run the following, which you can alias to `vimplugininstall` if you like:
+
+```sh
+vim +':PlugInstall' +':q!' +':q!''
+```
 
 ### *Why Plug?*
 
