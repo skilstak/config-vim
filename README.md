@@ -35,4 +35,6 @@ Because is not as fat as all it's older cousins.
 
 ### *Why only these plugins?*
 
-*Plug* is so good at managing and setting up plugins that it makes little sense to force our personal preferences on you other than those that are considered standard by the industry for a particular usage (ex: `fatih/vim-go`) for example.
+Modern `vim` does most of what want out of the box by default. (Not even `fatih/vim-go` (which is now unsupported) is worth getting.)
+
+*Plug* is so good at managing and setting up any of the few plugins that you might actually want that it makes little sense to force personal preferences on you other than those that are considered standard by the industry for a particular usage.
