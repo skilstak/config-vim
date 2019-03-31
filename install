@@ -1,0 +1,8 @@
+#!/bin/bash
+
+[[ ! $(type vim) || ! $(type vimtutor) ]] && sudo apt install vim
+
+mkdir -p ~/.vim/autoload
+cp autoload/plug.vim ~/.vim/autoload
+ln -fs $PWD/vimrc ~/.vimrc
+vim +':PlugInstall' +':q!' +':q!'
