@@ -96,14 +96,15 @@ map <F4> :set list!<CR>
 map <F5> :set cursorline!<CR>
 map <F7> :set spell!<CR>
 
-" ween yourself off arrow keys (turn on later for scoll support after weened)
+" ween yourself off arrow keys
+" (comment for scoll support later)
 
-"noremap <up> :echoerr "Umm, use k instead"<CR>
-"noremap <down> :echoerr "Umm, use j instead"<CR>
-"noremap <left> :echoerr "Umm, use h instead"<CR>
-"noremap <right> :echoerr "Umm, use l instead"<CR>
-"inoremap <up> <NOP>
-"inoremap <down> <NOP>
-"inoremap <left> <NOP>
-"inoremap <right> <NOP>
+noremap <up> :echoerr "Umm, use k instead"<CR>
+noremap <down> :echoerr "Umm, use j instead"<CR>
+noremap <left> :echoerr "Umm, use h instead"<CR>
+noremap <right> :echoerr "Umm, use l instead"<CR>
+inoremap <up> <NOP>
+inoremap <down> <NOP>
+inoremap <left> <NOP>
+inoremap <right> <NOP>
 
