@@ -2,10 +2,10 @@
 
 Our favorite stuff for our favorite editor Vim, the one-true editor (of course). Fork and maintaining your own is probably best.
 
-* solarized
-* pandoc 
+* Solarized
+* Pandoc 
 
-***Don't forget to learn without arrow keys and `cntr-[` instead of `Esc` key.***
+***Don't forget to learn without arrow keys and `Ctrl-[` instead of `Esc` key.***
 
 After cloning just run `./install`.
 
@@ -13,7 +13,7 @@ After cloning just run `./install`.
 
 ### *Why no NeoVim?*
 
-[Because](https://skilstak.io) it is stupid and worthless if you use TMUX (which you should) configured with Vim bindings. I mean, who *really* wants to write plugins in Lua? *Pfff.* (Vim 7+ comes with Python support.)
+[Because](https://skilstak.io) it is stupid and worthless if you use `tmux` (which you should) configured with Vim bindings. I mean, who *really* wants to write plugins in Lua? (Vim 7+ comes with Python support.)
 
 *Let me try that again in my politically-correcter-er voice.*
 

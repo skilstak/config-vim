@@ -56,10 +56,10 @@ let g:pandoc#modules#disabled = ["folding"]
 "let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#syntax#conceal#urls = 1
 let g:pandoc#syntax#conceal#blacklist = ["atx","codeblock_start","codeblock_delim"]
-au Syntax * hi pandocEmphasis term=bold cterm=bold ctermfg=6
-au Syntax * hi pandocAtxStart ctermfg=3 cterm=none
-au Syntax * hi pandocAtxHeader term=bold cterm=bold ctermfg=6
-au Syntax * hi pandocStrongEmphasis term=bold cterm=bold ctermfg=Red
+au Syntax * hi link pandocAtxStart Type 
+au Syntax * hi link pandocAtxHeader Type
+au Syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
+au Syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
 au Syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
 au Syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
 
