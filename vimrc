@@ -59,6 +59,7 @@ let g:pandoc#syntax#conceal#blacklist = ["atx","codeblock_start","codeblock_deli
 au Syntax * hi link pandocAtxStart Type 
 au Syntax * hi link pandocAtxHeader Type
 au Syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
+au Syntax * hi pandocStrong cterm=bold term=bold ctermfg=Magenta 
 au Syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
 au Syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
 au Syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
