@@ -1,5 +1,9 @@
 # SkilStak Vim Setup and Configuration
 
+*[This repo is mirrored from ![Fox](gitlab.png) GitLab (a far superior Git hosting platform).]*
+
+![Vim Logo](logo.png)
+
 Our favorite stuff for our favorite editor Vim, the one-true editor (of course). Fork and maintaining your own is probably best.
 
 * Solarized

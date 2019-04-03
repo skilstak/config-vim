@@ -58,6 +58,7 @@ let g:pandoc#syntax#conceal#urls = 1
 let g:pandoc#syntax#conceal#blacklist = ["atx","codeblock_start","codeblock_delim"]
 au Syntax * hi link pandocAtxStart Type 
 au Syntax * hi link pandocAtxHeader Type
+au Syntax * hi Default cterm=none term=none
 au Syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
 au Syntax * hi pandocStrong cterm=bold term=bold ctermfg=Magenta 
 au Syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
