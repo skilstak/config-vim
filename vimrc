@@ -24,6 +24,7 @@ set nohlsearch
 set noincsearch
 set noshowmatch
 set linebreak
+set ignorecase
 
 syntax enable
 filetype plugin on
