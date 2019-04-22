@@ -5,5 +5,5 @@
 mkdir -p ~/.vim/autoload
 cp autoload/plug.vim ~/.vim/autoload
 ln -fs $PWD/vimrc ~/.vimrc
-ln -fs $PWD/spqll ~/.vim/spell
+ln -fs $PWD/spell ~/.vim/spell
 vim +':PlugInstall' +':q!' +':q!'
