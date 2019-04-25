@@ -27,6 +27,10 @@ set noincsearch
 set noshowmatch
 set linebreak
 
+" fixes 'Press ENTER or type command to continue'
+set shortmess=a
+set cmdheight=2
+
 syntax enable
 filetype plugin on
 
