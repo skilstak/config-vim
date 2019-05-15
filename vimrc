@@ -62,20 +62,22 @@ let g:pandoc#modules#disabled = ["folding"]
 "let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#syntax#conceal#urls = 1
 let g:pandoc#syntax#conceal#blacklist = ["atx","codeblock_start","codeblock_delim"]
-au Syntax * hi link pandocAtxStart Type 
-au Syntax * hi link pandocAtxHeader Type
-au Syntax * hi Default cterm=none term=none
-au Syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
-au Syntax * hi pandocStrong cterm=bold term=bold ctermfg=Magenta 
-au Syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
-au Syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
-au Syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
+au syntax * hi link pandocAtxStart Type 
+au syntax * hi link pandocAtxHeader Type
+au syntax * hi Default cterm=none term=none
+au syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
+au syntax * hi pandocStrong cterm=bold term=bold ctermfg=Magenta 
+au syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
+au syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
+au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
 
 " syntax helpers
 
-au BufNewFile,BufRead *.crontab set ft=crontab
-au BufNewFile,BufRead *ssh/config set filetype=sshconfig
-au BufNewFile,BufRead *gitconfig set filetype=gitconfig
+au bufnewfile,bufRead *.crontab set ft=crontab
+au bufnewfile,bufRead *ssh/config set filetype=sshconfig
+au bufnewfile,bufRead *gitconfig set filetype=gitconfig
+
+" displays all the syntax rules for current position
 
 function! <SID>SynStack()
 	if !exists("*synstack")
@@ -84,7 +86,7 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc  
 
-" last place you were editing
+" start at last place you were editing
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -115,4 +117,8 @@ inoremap <up> <NOP>
 inoremap <down> <NOP>
 inoremap <left> <NOP>
 inoremap <right> <NOP>
+
+" go stuff
+
+autocmd bufwritepost *.go silent execute ':%!gofmt'
 
