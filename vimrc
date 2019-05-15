@@ -119,6 +119,7 @@ inoremap <left> <NOP>
 inoremap <right> <NOP>
 
 " go stuff
+" (I don't care for the bloated fatih/vim-go)
 
 autocmd bufwritepost *.go silent execute ':%!gofmt'
 
