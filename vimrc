@@ -119,7 +119,7 @@ inoremap <left> <NOP>
 inoremap <right> <NOP>
 
 " go stuff
-" (I don't care for the bloated fatih/vim-go)
+" (I don't care for fatih/vim-go)
 
 autocmd vimleavepre *.go !gofmt -w %
 
