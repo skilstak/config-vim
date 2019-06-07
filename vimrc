@@ -6,6 +6,7 @@ let skip_defaults_vim=1
 " standard stuff
 
 set number
+set relativenumber
 set nocompatible
 set ruler
 set expandtab
