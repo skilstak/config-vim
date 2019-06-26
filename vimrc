@@ -77,6 +77,7 @@ au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
 au bufnewfile,bufRead *.crontab set ft=crontab
 au bufnewfile,bufRead *ssh/config set filetype=sshconfig
 au bufnewfile,bufRead *gitconfig set filetype=gitconfig
+au bufnewfile,bufread /tmp/psql.edit.* set syntax=sql
 
 " displays all the syntax rules for current position
 
