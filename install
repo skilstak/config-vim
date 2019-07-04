@@ -5,5 +5,7 @@
 mkdir -p ~/.vim/autoload
 cp autoload/plug.vim ~/.vim/autoload
 ln -fs $PWD/vimrc ~/.vimrc
-ln -fs $PWD/spell ~/.vim/spell
 vim +':PlugInstall' +':q!' +':q!'
+
+echo Add a ~/repos/private/vim/spell directory if you like.
+

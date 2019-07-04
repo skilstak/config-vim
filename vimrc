@@ -122,6 +122,6 @@ inoremap <right> <NOP>
 
 " go stuff
 " (I don't care for fatih/vim-go)
-
 autocmd vimleavepre *.go !gofmt -w %
 
+set rtp^=~/repos/private/vim
