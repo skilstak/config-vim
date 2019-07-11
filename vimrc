@@ -101,7 +101,7 @@ map <C-l> <C-W>l
 
 " functions keys
 
-map <F1> :set number!<CR>
+map <F1> :set number!<CR> :set relativenumber!<CR>
 nmap <F2> :call <SID>SynStack()<CR>
 set pastetoggle=<F3>
 map <F4> :set list!<CR>
