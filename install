@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ ! $(type vim) || ! $(type vimtutor) ]] && sudo apt install vim
+[[ ! $(type vim) || ! $(type vimtutor) ]] && echo "Need to install vim." && exit 1
 
 mkdir -p ~/.vim/autoload
 cp autoload/plug.vim ~/.vim/autoload
