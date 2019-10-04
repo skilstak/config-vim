@@ -79,6 +79,10 @@ au bufnewfile,bufRead *ssh/config set filetype=sshconfig
 au bufnewfile,bufRead *gitconfig set filetype=gitconfig
 au bufnewfile,bufread /tmp/psql.edit.* set syntax=sql
 
+" type-specific 
+
+autocmd Filetype go setlocal ts=6 sw=6 sts=0 expandtab
+
 " displays all the syntax rules for current position
 
 function! <SID>SynStack()
@@ -120,8 +124,7 @@ inoremap <down> <NOP>
 inoremap <left> <NOP>
 inoremap <right> <NOP>
 
-" go stuff
-" (I don't care for fatih/vim-go)
+" Go stuff (I really don't care for fatih/vim-go)
 autocmd vimleavepre *.go !gofmt -w %
 
 set rtp^=~/repos/private/vim
