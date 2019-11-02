@@ -28,6 +28,10 @@ set noincsearch
 set noshowmatch
 set linebreak
 
+" source $PWD/.vimrc securely
+set exrc
+set secure
+
 " fixes 'Press ENTER or type command to continue'
 set shortmess=a
 set cmdheight=2
