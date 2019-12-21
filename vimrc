@@ -28,6 +28,9 @@ set noincsearch
 set noshowmatch
 set linebreak
 
+" required for mac delete to work
+set backspace=indent,eol,start
+
 " source $PWD/.vimrc securely
 set exrc
 set secure
