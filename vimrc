@@ -18,6 +18,7 @@ set smarttab
 set autoindent
 set formatoptions=qrn1
 set cursorline
+set colorcolumn=59
 set nobackup
 set noswapfile
 set nowritebackup
