@@ -18,7 +18,6 @@ set smarttab
 set autoindent
 set formatoptions=qrn1
 set cursorline
-set colorcolumn=59
 set nobackup
 set noswapfile
 set nowritebackup
@@ -91,6 +90,7 @@ au bufnewfile,bufread /tmp/psql.edit.* set syntax=sql
 " type-specific 
 
 autocmd Filetype go setlocal ts=6 sw=6 sts=0 expandtab
+autocmd Filetype markdown set colorcolumn=59
 
 " displays all the syntax rules for current position
 
