@@ -54,6 +54,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'robmuh/abnf'
+Plug 'robmuh/vim-gopeg'
+Plug 'fatih/vim-go'
 call plug#end()
 
 " solarized
@@ -133,7 +135,7 @@ inoremap <down> <NOP>
 inoremap <left> <NOP>
 inoremap <right> <NOP>
 
-" Go stuff (I really don't care for fatih/vim-go)
-autocmd vimleavepre *.go !gofmt -w %
+" backup if fatih fails (again)
+"autocmd vimleavepre *.go !gofmt -w %
 
 set rtp^=~/repos/private/vim
