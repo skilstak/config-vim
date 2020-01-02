@@ -137,5 +137,6 @@ inoremap <right> <NOP>
 
 " backup if fatih fails (again)
 "autocmd vimleavepre *.go !gofmt -w %
+let g:go_fmt_fail_silently = 0
 
 set rtp^=~/repos/private/vim
