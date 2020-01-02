@@ -53,7 +53,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'http://gitlab.com/ssoil/abnf'
+Plug 'robmuh/abnf'
 call plug#end()
 
 " solarized
